@@ -65,9 +65,18 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: rgb(14, 65, 116);
   font-size: 18px;
+  font-weight: bold;
+}
+.logo:hover{
+  color: rgb(79, 149, 218);
 
+}
+.navicons{
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
 }
 .cart-icon{
   font-size: 25px;

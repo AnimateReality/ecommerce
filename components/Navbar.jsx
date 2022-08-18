@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineShopping, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { useStateContext } from '../context/StateContext';
 import { Cart } from './';
 
@@ -13,7 +13,11 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href="/">SoundBoom</Link>
+        <Link href="/">Blue Ship</Link>
+      </p>
+      <p className='navicons'>
+      <Link href="https://github.com/AnimateReality"><a> <AiFillGithub /></a></Link>
+      <Link href="https://www.linkedin.com/in/ronald-chittinappilly"><a> <AiFillLinkedin /></a></Link>
       </p>
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
